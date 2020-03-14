@@ -3,6 +3,9 @@
 
 <template>
   <div :class="[$style.exampleScrollPage]">
-    <h2>ExampleScrollPage</h2>
+    <ExampleScrollComponent
+      ref="ref1"
+      @isReady="handleScrollComponentReady"
+    />
   </div>
 </template>

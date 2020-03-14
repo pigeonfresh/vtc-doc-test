@@ -1,13 +1,13 @@
-import {
-  AbstractPageScrollComponent,
-  getEventBus,
-  ADD_COMPONENTS,
-} from 'vue-transition-component';
+import { AbstractPageScrollComponent, getEventBus, ADD_COMPONENTS } from 'vue-transition-component';
+import ExampleScrollComponent from '../../component/ExampleScrollComponent';
 import ExampleScrollPageTransitionController from './ExampleScrollPageTransitionController';
 
 // @vue/component
 export default {
   name: 'ExampleScrollPage',
+  components: {
+    ExampleScrollComponent,
+  },
   extends: AbstractPageScrollComponent,
   methods: {
     handleAllComponentsReady() {
