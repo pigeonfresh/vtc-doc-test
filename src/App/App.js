@@ -1,5 +1,6 @@
 import { FlowManager, AbstractRegistrableComponent, ScrollTrackerPlugin } from 'vue-transition-component';
 import { DeviceStateEvent } from 'seng-device-state-tracker';
+import Vue from 'vue';
 import { mapMutations, mapState } from 'vuex';
 import { SET_DEVICE_STATE } from '../store/module/app/app';
 
