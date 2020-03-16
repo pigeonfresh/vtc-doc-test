@@ -7,5 +7,9 @@
       ref="ref1"
       @isReady="handleScrollComponentReady"
     />
+    <ExampleScrollComponent
+      ref="ref2"
+      @isReady="handleScrollComponentReady"
+    />
   </div>
 </template>
