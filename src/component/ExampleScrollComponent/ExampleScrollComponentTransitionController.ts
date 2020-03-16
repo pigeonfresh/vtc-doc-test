@@ -18,7 +18,18 @@ export default class ExampleScrollComponentTransitionController extends Abstract
     timeline: TimelineMax,
     parent: IAbstractTransitionComponent,
     id: string,
-  ): void {}
+  ): void {
+    timeline.fromTo(
+      parent.$el,
+      4,
+      {
+        autoAlpha: 0,
+      },
+      {
+        autoAlpha: 1,
+      },
+    );
+  }
 
   /**
    * Use this method to setup your transition out timeline
