@@ -2,7 +2,7 @@
 <script src="./App.js"></script>
 
 <template>
-  <div :class="[$style.app]">
+  <div ref="container" :class="[$style.app]" >
     <transition @leave="onLeave">
       <router-view />
     </transition>
